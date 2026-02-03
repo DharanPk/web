@@ -1,65 +1,28 @@
 import React from "react";
+import "./ProductCard.css";
 
 function ProductCard({ product }) {
-  if (!product) return null;
-
   return (
-    <div style={styles.card}>
-      <div style={styles.imageWrapper}>
-        <img
-          src={product.image}
-          alt={product.name}
-          style={styles.image}
-          loading="lazy"
-        />
+    <div className="food-card">
+      <div className="food-img">
+        <img src={product.image} alt={product.name} />
+        <span className="add-btn">+</span>
       </div>
 
-      <h4 style={styles.name}>{product.name}</h4>
-      <p style={styles.price}>₹{product.price}</p>
+      <div className="food-info">
+        <div className="food-title">
+          <h4>{product.name}</h4>
+          <span className="rating">★★★★☆</span>
+        </div>
 
-      <button style={styles.btn}>Add</button>
+        <p className="desc">
+          Food provides essential nutrients for overall health.
+        </p>
+
+        <p className="price">₹{product.price}</p>
+      </div>
     </div>
   );
 }
-
-
-const styles = {
-  card: {
-    width: "180px",
-    background: "#fff",
-    borderRadius: "12px",
-    padding: "10px",
-    boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-    textAlign: "center",
-  },
-  imageWrapper: {
-    width: "100%",
-    height: "120px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  image: {
-    maxWidth: "100%",
-    maxHeight: "100%",
-    objectFit: "cover",
-  },
-  name: {
-    fontSize: "14px",
-    margin: "8px 0",
-  },
-  price: {
-    fontWeight: "bold",
-  },
-  btn: {
-    marginTop: "6px",
-    padding: "6px 10px",
-    borderRadius: "6px",
-    border: "none",
-    background: "black",
-    color: "white",
-    cursor: "pointer",
-  },
-};
 
 export default ProductCard;

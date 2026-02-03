@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Category from "./Category";
 import ProductCard from "./ProductCard";
 import { foods } from "../../Data/data";
+import "./Product.css";   // 👈 make sure this is imported
 
 function Products() {
   const [selected, setSelected] = useState("All");
@@ -13,19 +14,13 @@ function Products() {
 
   return (
     <>
-      <Category setSelected={setSelected} />
+      <Category selected={selected} setSelected={setSelected} />
 
       {filteredFoods.map((food) => (
         <div key={food.category}>
-          <h2>{food.category}</h2>
+          <h2 className="category-title">{food.category}</h2>
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
-              gap: "16px",
-            }}
-          >
+          <div className="product-grid">
             {food.items.map((item) => (
               <ProductCard key={item.id} product={item} />
             ))}
