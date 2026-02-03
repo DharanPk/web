@@ -1,0 +1,41 @@
+.newsletter {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fffdf4;
+}
+
+.newsletter-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-box input {
+  padding: 12px;
+  width: 300px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+
+.newsletter-box button {
+  padding: 12px 20px;
+  background: #facc15;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.footer {
+  background: #fff3c4;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.logo {
+  color: #facc15;
+}
