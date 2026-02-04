@@ -12,7 +12,12 @@ function ProductCard({ product }) {
       <div className="food-info">
         <div className="food-title">
           <h4>{product.name}</h4>
-          <span className="rating">★★★★☆</span>
+          <span className="rating">
+            <i class="fa fa-star" ></i>
+            <i class="fa fa-star" ></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </span>
         </div>
         <p className="price">₹{product.price}</p>
       </div>

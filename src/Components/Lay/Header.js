@@ -8,7 +8,7 @@ function Header() {
       <div className="pic">
         <img src={image} alt="img" />
       </div>
-
+      <div className="bar">
       <nav className="nav">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
@@ -17,6 +17,7 @@ function Header() {
           <i className="fa-solid fa-cart-shopping"></i>
         </Link>
       </nav>
+      </div>
     </header>
   );
 }

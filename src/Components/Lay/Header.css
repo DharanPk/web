@@ -1,4 +1,4 @@
-.head {
+.head{
   position: absolute;
   top: 0;
   width: 90%;
@@ -10,7 +10,7 @@
 
 .nav a {
   margin-right: 50px;
-  color: rgb(94, 213, 110);
+  color: rgb(114, 66, 66);
   text-decoration: none;
   font-weight: 600;
   /* background-color: black;
@@ -24,5 +24,6 @@
 }
 
 .nav a:hover {
-  color: rgb(35, 166, 20);
+   color: rgb(255, 58, 14);
+
 }
