@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Category from "./Category";
 import ProductCard from "./ProductCard";
 import { foods } from "../../Data/data";
-import "./Product.css";   // 👈 make sure this is imported
+import "./Product.css"; 
 
 function Products() {
   const [selected, setSelected] = useState("All");

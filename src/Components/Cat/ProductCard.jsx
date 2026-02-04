@@ -14,11 +14,6 @@ function ProductCard({ product }) {
           <h4>{product.name}</h4>
           <span className="rating">★★★★☆</span>
         </div>
-
-        <p className="desc">
-          Food provides essential nutrients for overall health.
-        </p>
-
         <p className="price">₹{product.price}</p>
       </div>
     </div>

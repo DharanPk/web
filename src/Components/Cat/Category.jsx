@@ -22,5 +22,4 @@ function Category({ selected, setSelected }) {
     </div>
   );
 }
-
 export default Category;

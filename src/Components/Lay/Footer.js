@@ -4,19 +4,6 @@ import "./Footer.css";
 function Footer() {
   return (
     <>
-      {/* NEWSLETTER */}
-      <div className="newsletter">
-        <h2>Subscribe To Our Newsletter</h2>
-        <p>
-          We recommend you to subscribe our newsletter, drop your email below.
-        </p>
-
-        <div className="newsletter-box">
-          <input type="email" placeholder="Enter your email address" />
-          <button>Subscribe</button>
-        </div>
-      </div>
-
       {/* FOOTER */}
       <footer className="footer">
         <div>

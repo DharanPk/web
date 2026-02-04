@@ -1,14 +1,13 @@
 .product-grid {
-  max-width: 1200px;        /* 👈 centers everything */
-  margin: 0 auto;           /* 👈 FIXES left alignment */
+  max-width: 1200px;
+  margin: 0 auto; 
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 24px;
 
-  justify-items: center;    /* 👈 centers each ProductCard */
+  justify-items: center; 
 }
-
 .category-title {
   max-width: 1200px;
   margin: 40px auto 20px;

@@ -19,17 +19,7 @@ const Slider = () => {
   return (
     <div className="slider">
       <img src={images[index]} alt="offer" />
-
-      {/* dots */}
-      <div className="dots">
-        {images.map((_, i) => (
-          <span
-            key={i}
-            className={index === i ? "dot active" : "dot"}
-            onClick={() => setIndex(i)}
-          />
-        ))}
-      </div>
+  
     </div>
   );
 };
