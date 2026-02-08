@@ -9,18 +9,27 @@ function AboutSection() {
           <img src="https://th.bing.com/th/id/OIP.WEpg1wbfUn5OGyzH3O-f1gHaE8?w=264&h=185&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" alt="burger" />
         </div>
 
-        <div className="about-content">
-          <h2>NOTHING BRINGS PEOPLE TOGETHER LIKE A GOOD BURGER</h2>
-          <p>
-            Fresh ingredients, handcrafted burgers and fast delivery.
-          </p>
+       <section className="about-area">
+  <div className="about-content">
+    <h2>
+      NOTHING BRINGS PEOPLE TOGETHER <br />
+      LIKE GREAT FOOD
+    </h2>
 
-          <ul>
-            <li>✔ Fresh quality food</li>
-            <li>✔ Fast doorstep delivery</li>
-            <li>✔ Affordable prices</li>
-          </ul>
-        </div>
+    <p>
+      At Foodie, we believe food is more than just a meal — it’s an experience.
+      From the first bite to the last, we focus on flavor, freshness, and fast delivery.
+    </p>
+
+    <ul>
+      <li>Freshly prepared meals using premium ingredients</li>
+      <li>Fast & reliable delivery</li>
+      <li>Wide variety of delicious dishes</li>
+      <li>Hygienic cooking and safe packaging</li>
+      <li>Easy ordering & secure payments</li>
+    </ul>
+  </div>
+</section>
       </div>
     </section>
   );

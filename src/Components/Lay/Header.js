@@ -7,6 +7,7 @@ function Header() {
     <header className="head">
       <div className="pic">
         <img src={image} alt="img" />
+        <h1>Foodie</h1>
       </div>
       <div className="bar">
       <nav className="nav">

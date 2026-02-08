@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home";
 import Menu from "./Pages/Menu/Menu";
 import Login from "./Pages/Login/Login";
 import About from "./Pages/About";
+import Cart from "./Pages/Cart/Cart";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
+            <Route path="/Cart" element={<Cart />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>

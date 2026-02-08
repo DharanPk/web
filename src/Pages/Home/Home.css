@@ -6,11 +6,11 @@
 .main{
   height:100vh;
   padding-top: 300px;
-  background-image: url("https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?cs=srgb&dl=pexels-jane-doan-1099680.jpg&fm=jpg");
+  background-image: url("bg3.jpg");
   background-size: cover;
   background-position: center;
   /* padding-left: 600px; */
-  color:rgb(4, 243, 247);
+  color:rgb(241, 251, 251);
   display: flex;
   align-items: center;
   justify-content:flex-end;

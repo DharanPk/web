@@ -25,6 +25,27 @@ export const categories = [
     name: "Dessert",
     image: "https://th.bing.com/th/id/OIP.PIMj14SjsSvmNhGBGFGUrQHaE8?w=275&h=183&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
   },
+  {
+  id: 6,
+  name: "Pizza",
+  image: "https://th.bing.com/th/id/OIP.0kZ8w2NfN4p9X2y6gE1h3AHaE8?w=278&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+},
+{
+  id: 7,
+  name: "Burger",
+  image: "https://th.bing.com/th/id/OIP.r1zP7Hk2c8U9nQx0nJ5eHgHaE8?w=278&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+},
+{
+  id: 8,
+  name: "Chinese",
+  image: "https://th.bing.com/th/id/OIP.q6n5KcNn5Y2n2mXq2R3pXQHaE8?w=278&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+},
+{
+  id: 9,
+  name: "Snacks",
+  image: "https://th.bing.com/th/id/OIP.s3pQy3gJx4nJpZrZ8sE8ZwHaE8?w=278&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+}
+
 ];
 
 // export const items = [
@@ -106,6 +127,45 @@ export const foods = [
   
      ],
   },
+  {
+  category: "Pizza",
+  items: [
+    { id: 18, name: "Margherita Pizza", price: 299, image: "https://th.bing.com/th/id/OIP.DgR4xWnKkQ9z9B5b9A8g2AHaE8?pid=ImgDet", category: "Pizza" },
+    { id: 19, name: "Veg Pizza", price: 349, image: "https://th.bing.com/th/id/OIP.3z5p7x0B7TnM9P8mR8fJ9AHaE8?pid=ImgDet", category: "Pizza" },
+    { id: 20, name: "Chicken Pizza", price: 399, image: "https://th.bing.com/th/id/OIP.x0B4T2JpQpP8J0F9H3L8aAHaE8?pid=ImgDet", category: "Pizza" },
+    { id: 21, name: "Chicken Pizza", price: 399, image: "https://th.bing.com/th/id/OIP.x0B4T2JpQpP8J0F9H3L8aAHaE8?pid=ImgDet", category: "Pizza" },
+    { id: 22, name: "Chicken Pizza", price: 399, image: "https://th.bing.com/th/id/OIP.x0B4T2JpQpP8J0F9H3L8aAHaE8?pid=ImgDet", category: "Pizza" }
+  ]
+},
+{
+  category: "Burger",
+  items: [
+    { id: 23, name: "Veg Burger", price: 149, image: "https://th.bing.com/th/id/OIP.8nR7C6ZB2KZP4H3k9Wc4GgHaE8?pid=ImgDet", category: "Burger" },
+    { id: 24, name: "Chicken Burger", price: 199, image: "https://th.bing.com/th/id/OIP.6X9F8Z8mZ8Z3m9kR8B8kJgHaE8?pid=ImgDet", category: "Burger" },
+    { id: 25, name: "Chicken Burger", price: 199, image: "https://th.bing.com/th/id/OIP.6X9F8Z8mZ8Z3m9kR8B8kJgHaE8?pid=ImgDet", category: "Burger" },
+    { id: 26, name: "Chicken Burger", price: 199, image: "https://th.bing.com/th/id/OIP.6X9F8Z8mZ8Z3m9kR8B8kJgHaE8?pid=ImgDet", category: "Burger" },
+    { id: 27, name: "Chicken Burger", price: 199, image: "https://th.bing.com/th/id/OIP.6X9F8Z8mZ8Z3m9kR8B8kJgHaE8?pid=ImgDet", category: "Burger" }
+  ]
+},{
+  category: "Snacls",
+  items: [
+    { id: 28, name: "Margherita Pizza", price: 299, image: "https://th.bing.com/th/id/OIP.DgR4xWnKkQ9z9B5b9A8g2AHaE8?pid=ImgDet", category: "Pizza" },
+    { id: 29, name: "Veg Pizza", price: 349, image: "https://th.bing.com/th/id/OIP.3z5p7x0B7TnM9P8mR8fJ9AHaE8?pid=ImgDet", category: "Pizza" },
+    { id: 30, name: "Chicken Pizza", price: 399, image: "https://th.bing.com/th/id/OIP.x0B4T2JpQpP8J0F9H3L8aAHaE8?pid=ImgDet", category: "Pizza" },
+    { id: 31, name: "Chicken Pizza", price: 399, image: "https://th.bing.com/th/id/OIP.x0B4T2JpQpP8J0F9H3L8aAHaE8?pid=ImgDet", category: "Pizza" },
+    { id: 32, name: "Chicken Pizza", price: 399, image: "https://th.bing.com/th/id/OIP.x0B4T2JpQpP8J0F9H3L8aAHaE8?pid=ImgDet", category: "Pizza" }
+  ]
+},
+{
+  category: "Chinese",
+  items: [
+    { id: 33, name: "Veg Burger", price: 149, image: "https://th.bing.com/th/id/OIP.8nR7C6ZB2KZP4H3k9Wc4GgHaE8?pid=ImgDet", category: "Burger" },
+    { id: 34, name: "Chicken Burger", price: 199, image: "https://th.bing.com/th/id/OIP.6X9F8Z8mZ8Z3m9kR8B8kJgHaE8?pid=ImgDet", category: "Burger" },
+    { id: 35, name: "Chicken Burger", price: 199, image: "https://th.bing.com/th/id/OIP.6X9F8Z8mZ8Z3m9kR8B8kJgHaE8?pid=ImgDet", category: "Burger" },
+    { id: 36, name: "Chicken Burger", price: 199, image: "https://th.bing.com/th/id/OIP.6X9F8Z8mZ8Z3m9kR8B8kJgHaE8?pid=ImgDet", category: "Burger" },
+    { id: 37, name: "Chicken Burger", price: 199, image: "https://th.bing.com/th/id/OIP.6X9F8Z8mZ8Z3m9kR8B8kJgHaE8?pid=ImgDet", category: "Burger" }
+  ]
+},
 ];
 
 

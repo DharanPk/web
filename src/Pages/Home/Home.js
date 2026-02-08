@@ -5,10 +5,10 @@ function Home() {
     <>
       <div className="main">
         <div className="sub">
-          <h1>NEW BURGER</h1>
-          <h3>WITH ONION</h3>
+          <h1>GREAT DEAL</h1>
+          <h3>WITH 50% OFFER</h3>
           <p>
-            Fresh patties, melted cheese, crispy onion and special sauce.
+            Fresh patties , Melted Cream , Crispy Chicken and Special Desserts.
           </p>
           <button>ORDER NOW</button>
         </div>

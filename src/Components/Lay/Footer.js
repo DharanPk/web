@@ -6,7 +6,6 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-
         <div className="footer-about">
           <h2 className="footer-logo">Foodie.</h2>
           <p>
