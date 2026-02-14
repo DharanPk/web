@@ -4,12 +4,12 @@ import "./Category.css";
 
 function Category({ selected, setSelected }) {
   return (
-    <div className="category-container">
+    <div className="category">
       {categories.map((cat) => (
         <div
           key={cat.id}
-          className={`category-item ${selected === cat.name ? "active" : "" }`}onClick={() => setSelected(cat.name)}>
-          <div className="category-img">
+          className={`item ${selected === cat.name ? "active" : "" }`}onClick={() => setSelected(cat.name)}>
+          <div className="image">
             <img src={cat.image} alt={cat.name} />
           </div>
           <p>{cat.name}</p>

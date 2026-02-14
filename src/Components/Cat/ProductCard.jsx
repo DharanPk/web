@@ -26,7 +26,7 @@ function ProductCard({ product }) {
       <div className="food-info">
         <div className="food-title">
           <h4>{product.name}</h4>
-          <span className="rating">
+          <span className="rate">
             <i className="fa fa-star"></i>
             <i className="fa fa-star"></i>
             <i className="fa fa-star"></i>

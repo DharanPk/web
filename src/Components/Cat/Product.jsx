@@ -16,8 +16,8 @@ function Products() {
       <Category selected={selected} setSelected={setSelected} />
       {filteredFoods.map((food) =>(
         <div key={food.category}>
-          <h2 className="category-title">{food.category}</h2>
-          <div className="product-grid">
+          <h2 className="title">{food.category}</h2>
+          <div className="product">
             {food.items.map((item) => (
               <ProductCard key={item.id} product={item} />
             ))}
