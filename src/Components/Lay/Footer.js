@@ -7,38 +7,33 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-about">
-          <h2 className="footer-logo">Foodie.</h2>
+          <h2 className="logo">Foodie.</h2>
           <p>
             Delicious food delivered fast to your doorstep.
             Fresh ingredients, great taste, every time.
           </p>
-
-          <div className="social-icons">
+          <div className="icon">
             <FaFacebookF />
             <FaTwitter />
             <FaLinkedinIn />
           </div>
         </div>
-
-        <div className="footer-links">
+        <div className="link">
           <h4>Company</h4>
           <p>Home</p>
           <p>About Us</p>
           <p>Delivery</p>
           <p>Privacy Policy</p>
         </div>
-
-        {/* RIGHT */}
-        <div className="footer-contact">
+        <div className="contact">
           <h4>Get In Touch</h4>
-          <p>+91 98765 43210</p>
-          <p>support@foodie.com</p>
+          <p>+91 9751794574</p>
+          <p>foodie@gmail.com</p>
         </div>
-
       </div>
 
-      <div className="footer-bottom">
-        © 2024 Foodie.com — All Rights Reserved
+      <div className="bottom">
+        © 2026 Foodie.com — All Rights Reserved
       </div>
     </footer>
   );

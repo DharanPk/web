@@ -7,8 +7,6 @@ const ProtectedRoute = ({ children }) => {
   if (!isLogin) {
     return <Navigate to="/login" state={{ from: location.pathname }} />;
   }
-
   return children;
 };
-
 export default ProtectedRoute;

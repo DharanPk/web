@@ -1,76 +1,61 @@
-.checkout {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 20px;
-  font-family: "Roboto", sans-serif;
-}
-
-.checkout h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #222;
-}
-
-/* Form layout */
-.delivery-form {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-bottom: 30px;
-}
-
-.delivery-form input {
-  padding: 12px 14px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  outline: none;
-}
-
-.delivery-form input:focus {
-  border-color: #ff6b00;
-  box-shadow: 0 0 0 1px rgba(255, 107, 0, 0.3);
-}
-
-/* Summary box */
-.checkout-summary {
+.check {
+  width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #fff6f0;
-  padding: 20px;
-  border-radius: 10px;
+  flex-direction: column;
+  gap: 15px;
+  font-family: Arial, Helvetica, sans-serif;;
 }
-
-.checkout-summary h3 {
-  font-size: 22px;
+.check h2 {
+  text-align: center;
+  margin-bottom: 10px;
   color: #333;
 }
-
-.checkout-summary button {
-  background: #ff6b00;
-  color: white;
-  border: none;
-  padding: 14px 28px;
+.c-main{
+  background: url(./bg4.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+}
+.check input {
+  padding: 12px;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  font-size: 15px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+.check input:focus {
+  border-color: orangered;
+  box-shadow: 0 0 5px rgba(94, 213, 185, 0.4);
+}
+.check h3 {
+  margin-top: 10px;
+  text-align: right;
+  color: #222;
+}
+.check button {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background:orangered;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
-.checkout-summary button:hover {
-  background: #e85c00;
+.check button:hover {
+  background:rgb(48, 132, 48);
+  transform: translateY(-2px);
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  .delivery-form {
-    grid-template-columns: 1fr;
-  }
-
-  .checkout-summary {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
+.check button:active {
+  transform: scale(0.98);
 }
+ 

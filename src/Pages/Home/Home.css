@@ -59,12 +59,12 @@
 .h-main p {
   font-family: "Roboto", sans-serif;
 }
-.features-section {
+.f-section {
   width: 100%;
   background-color: #f6c53a;
   padding: 60px 0;
 }
-.features-container {
+.container {
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -72,29 +72,24 @@
   gap: 30px;
   padding: 0 20px;
 }
-.feature-box {
+.box {
   flex: 1;
   text-align: center;
   color: #222;
   transition: transform 0.3s ease;
 }
-.feature-box:hover {
+.box:hover {
   transform: translateY(-8px);
 }
 
-.feature-box h4 {
-  font-size: 18px;
+.box h4 {
+ font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.feature-box p {
+.box p {
   font-size: 14px;
   line-height: 1.6;
-}
-@media (max-width: 768px) {
-  .features-container {
-    flex-direction: column;
-  }
 }
 span{
   font-size: 80px;

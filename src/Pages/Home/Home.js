@@ -16,16 +16,16 @@ function Home() {
           <button onClick={()=>navigate('/menu')}>ORDER NOW</button>
         </div>
       </div>
-      <div className="features-section">
-        <div className="features-container">
+      <div className="f-section">
+        <div className="container">
 
-          <div className="feature-box">
+          <div className="box">
             <span> <i class="fa-solid fa-pizza-slice"></i></span>
             <h4>ORIGINAL</h4>
             <p>Authentic taste with fresh ingredients.</p>
           </div>
 
-          <div className="feature-box">
+          <div className="box">
             <span>
           <i class="fa-solid fa-bowl-food"></i>
           </span>
@@ -33,7 +33,7 @@ function Home() {
             <p>We serve premium quality food always.</p>
           </div>
 
-          <div className="feature-box">
+          <div className="box">
             <span>
            <i class="fa-solid fa-truck"></i></span>
             <h4>FAST DELIVERY</h4>

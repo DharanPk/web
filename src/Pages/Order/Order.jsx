@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import './Order.css';
 
 function Orders() {
   const orders = useSelector(state => state.product.orders);
@@ -9,15 +10,22 @@ function Orders() {
       <h2>My Orders</h2>
 
       {orders.map(order => (
-        <div key={order.id} className="order-card">
+        <div key={order.id} className="card">
           <p><b>Order ID:</b> {order.id}</p>
           <p><b>Total:</b> ₹{order.totalAmount}</p>
-          <p><b>Status:</b> {order.status}</p>
-
           {order.items.map(item => (
-            <p key={item.id}>
-              {item.name} × {item.qty}
-            </p>
+            <div key={item.id} className="item">
+              <img src={item.image} alt={item.name} />
+
+              <div className="detail">
+                <p className="name">{item.name}</p>
+                <p>Qty: {item.qty}</p>
+              </div>
+
+              <div className="price">
+                ₹{item.price}
+              </div>
+            </div>
           ))}
         </div>
       ))}

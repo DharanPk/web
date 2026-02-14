@@ -1,10 +1,9 @@
 .slider {
-  width: 90%;
+  width: 70%;
   max-width: 1200px;
-  height: 520px;   
+  height: 500px;   
   margin: 120px auto;
-  border-radius: 16px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .slider img {
   width: 100%;
@@ -12,4 +11,12 @@
   background-size:cover;
   object-fit: fill;
   display: block;
+}
+.slider h1 {
+ justify-items: center;
+  color: rgb(254, 6, 6);
+  font-size: 24px;
+  text-align: center;
+  transition: all 0.5s ease in-out;
+  transform: translate(0, 20px);
 }

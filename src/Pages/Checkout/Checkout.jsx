@@ -24,7 +24,6 @@ function Checkout() {
       alert("Fill all required fields");
       return;
     }
-
     dispatch(addOrder({
       id: Date.now(),
       items: cart,
@@ -33,13 +32,13 @@ function Checkout() {
       status: "Out for delivery",
       orderDate: new Date().toLocaleString()
     }));
-
     dispatch(clearCart());
     navigate("/orders");
   };
 
   return (
-    <div className="checkout">
+    <div className="c-main">
+    <div className="check">
       <h2>Delivery Information</h2>
 
       <input placeholder="Name" onChange={e=>setForm({...form,name:e.target.value})}/>
@@ -52,6 +51,7 @@ function Checkout() {
 
       <h3>Total: ₹{total}</h3>
       <button onClick={handleOrder}>Proceed To Payment</button>
+    </div>
     </div>
   );
 }
