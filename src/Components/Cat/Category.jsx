@@ -8,11 +8,7 @@ function Category({ selected, setSelected }) {
       {categories.map((cat) => (
         <div
           key={cat.id}
-          className={`category-item ${
-            selected === cat.name ? "active" : ""
-          }`}
-          onClick={() => setSelected(cat.name)}
-        >
+          className={`category-item ${selected === cat.name ? "active" : "" }`}onClick={() => setSelected(cat.name)}>
           <div className="category-img">
             <img src={cat.image} alt={cat.name} />
           </div>

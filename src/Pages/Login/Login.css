@@ -5,13 +5,12 @@
   cursor: pointer;
 }
 .top{
-    background: url(https://wallpapers.com/images/hd/food-4k-m37wpodzrcbv5gvw.jpg);
+    background: url("img2.jpg");
     background-size: cover;
 }
 .left {  
   width: 200px;
   margin-left: 80px; 
-  background:url(left.jpg);
   background-size:cover;
   align-items: center;
   justify-content: center;
@@ -25,6 +24,8 @@
   flex-direction: column;
   justify-content:start;
   align-items: center;
+justify-content: center;
+margin-left: 450px;
 }
 .right h2 {
   margin-bottom: 25px;
@@ -48,6 +49,7 @@
   width: 100px;
   border-radius: 15px;
   box-shadow: 2px 2px 10px  #84cc16 ;
+  cursor: pointer;
 
 }
 .or{
@@ -67,6 +69,12 @@
   border:2px solid #84cc16;
   font-weight: 700;
   background: transparent;
+  cursor: pointer;
+}
+.forgot{
+  align-self: flex-end;
+  margin-bottom: 10px;
+  color:#84cc16;
 }
 .face{
     padding: 10px;
@@ -75,6 +83,7 @@
   border:2px solid #84cc16;
   font-weight: 700;
   background: transparent;
+  cursor: pointer;
 }
 .reg{
   margin-top: 10px;
@@ -87,8 +96,8 @@
   cursor: pointer;
 }
 .face i{
-  color:rgb(232, 235, 241)
+  color:black;
 }
 .google i{
-  color:rgb(232, 235, 241)
+  color:black;
 }

@@ -1,10 +1,18 @@
- import React from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { add, remove } from "../../redux/action";
+import "./Cart.css";
+import { useEffect } from "react";
+import { saveCartToStorage } from "../../redux/cartStorage";
+import { useNavigate } from "react-router-dom"; 
 
 function Cart() {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.product.cartproduct);
+  useEffect(() => {
+  saveCartToStorage(cart);
+}, [cart]);
 
 
   const totalAmount = cart.reduce(
@@ -13,26 +21,45 @@ function Cart() {
   );
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>Your Cart</h2>
+    <div className="cart-container">
+      <h2>.</h2>
 
-      {cart.length === 0 && <p>Cart is empty</p>}
+      <table className="cart-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+        </thead>
 
-      {cart.map((item) => (
-        <div key={item.id} style={{ display: "flex", gap: "10px" }}>
-          <img src={item.image}  alt={item.name} width="60" />
-          <div>
-            <h4>{item.name}</h4>
-            <p>₹{item.price}</p>
+        <tbody>
+          {cart.map((item) => (
+            <tr key={item.id}>
+              <td>
+                <img src={item.image} alt={item.name} />
+              </td>
 
-            <button onClick={() => dispatch(remove(item.id))}>-</button>
-            <span style={{ margin: "0 10px" }}>{item.qty}</span>
-            <button onClick={() => dispatch(add(item))}>+</button>
-          </div>
-        </div>
-      ))}
+              <td>{item.name}</td>
 
-      <h3>Total: ₹{totalAmount}</h3>
+              <td>₹{item.price}</td>
+
+              <td>
+                <button onClick={() => dispatch(remove(item.id))}>−</button>
+                <span className="qty-value">{item.qty}</span>
+                <button onClick={() => dispatch(add(item))}>+</button>
+              </td>
+
+              <td>₹{item.price * item.qty}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <h3 className="cart-total">Grand Total: ₹{totalAmount}</h3>
+      <button className="pay-btn" onClick={()=>navigate("/checkout")}>Payment</button>
     </div>
   );
 }

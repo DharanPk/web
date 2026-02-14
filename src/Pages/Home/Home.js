@@ -1,16 +1,19 @@
 import "./Home.css";
-
+import React from "react";
+import { useNavigate } from "react-router-dom";
 function Home() {
+  const navigate = useNavigate();
   return (
     <>
-      <div className="main">
+    
+      <div className="h-main">
         <div className="sub">
           <h1>GREAT DEAL</h1>
           <h3>WITH 50% OFFER</h3>
           <p>
             Fresh patties , Melted Cream , Crispy Chicken and Special Desserts.
           </p>
-          <button>ORDER NOW</button>
+          <button onClick={()=>navigate('/menu')}>ORDER NOW</button>
         </div>
       </div>
       <div className="features-section">
@@ -42,5 +45,4 @@ function Home() {
     </>
   );
 }
-
 export default Home;

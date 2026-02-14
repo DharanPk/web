@@ -1,9 +1,8 @@
-/* ABOUT SECTION */
+
 .about-section {
   padding: 80px 10%;
   background: #f8f9f7;
 }
-
 .about-container {
   display: flex;
   gap: 50px;

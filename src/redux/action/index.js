@@ -13,3 +13,12 @@ export const remove = (id) => {
     payload: id,
   };
 };
+
+export const addOrder = (order) => ({
+  type: "ADD_ORDER",
+  payload: order
+});
+
+export const clearCart = () => ({
+  type: "CLEAR_CART"
+});

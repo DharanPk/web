@@ -5,6 +5,9 @@ import Menu from "./Pages/Menu/Menu";
 import Login from "./Pages/Login/Login";
 import About from "./Pages/About";
 import Cart from "./Pages/Cart/Cart";
+import ProtectedRoute from "./Pages/Menu/ProtectdRoute";
+import Checkout from "./Pages/Checkout/Checkout";
+import Order from "./Pages/Order/Order";
 
 function App() {
   return (
@@ -12,11 +15,12 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/about" element={<About />} />
+         <Route path="/menu"element={<ProtectedRoute><Menu /></ProtectedRoute>}/>
+         <Route path="/cart"element={<ProtectedRoute><Cart />  </ProtectedRoute>}/>
+         <Route path="/checkout"element={<ProtectedRoute><Checkout />  </ProtectedRoute>}/>
+         <Route path="/orders"element={<ProtectedRoute><Order />  </ProtectedRoute>}/>
+          <Route path="/about"element={<ProtectedRoute><About />  </ProtectedRoute>}/>
           <Route path="/login" element={<Login />} />
-            <Route path="/Cart" element={<Cart />} />
-          
         </Route>
       </Routes>
     </BrowserRouter>

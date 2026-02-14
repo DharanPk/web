@@ -14,7 +14,9 @@ function Header() {
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/menu">Menu</Link>
-        <Link to="/cart" className="cart">
+         <Link to="/login" >sign up</Link>
+         <Link to="/cart" className="cart">
+       
           <i className="fa-solid fa-cart-shopping"></i>
         </Link>
       </nav>
