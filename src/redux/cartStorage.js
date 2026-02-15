@@ -6,7 +6,6 @@ export const loadCartFromStorage = () => {
     return [];
   }
 };
-
 export const saveCartToStorage = (cart) => {
   try {
     sessionStorage.setItem("cart", JSON.stringify(cart));

@@ -14,13 +14,13 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
+         <Route path="/" element={<Home />} />
          <Route path="/menu"element={<ProtectedRoute><Menu /></ProtectedRoute>}/>
          <Route path="/cart"element={<ProtectedRoute><Cart />  </ProtectedRoute>}/>
          <Route path="/checkout"element={<ProtectedRoute><Checkout />  </ProtectedRoute>}/>
          <Route path="/orders"element={<ProtectedRoute><Order />  </ProtectedRoute>}/>
-          <Route path="/about"element={<ProtectedRoute><About />  </ProtectedRoute>}/>
-          <Route path="/login" element={<Login />} />
+        <Route path="/about"element={<ProtectedRoute><About />  </ProtectedRoute>}/>
+        <Route path="/login" element={<Login />} />
         </Route>
       </Routes>
     </BrowserRouter>

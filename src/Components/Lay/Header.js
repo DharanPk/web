@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
-import image from "./food.png"; // correct path confirm pannu
+import image from "./food.png";
 
 function Header() {
   return (

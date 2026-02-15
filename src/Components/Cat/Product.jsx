@@ -6,11 +6,7 @@ import "./Product.css";
 
 function Products() {
   const [selected, setSelected] = useState("All");
-
-  const filteredFoods =
-    selected === "All"
-      ? foods
-      : foods.filter((food) => food.category === selected);
+  const filteredFoods =selected==="All"? foods:foods.filter((food) => food.category === selected);
   return (
     <>
       <Category selected={selected} setSelected={setSelected} />
